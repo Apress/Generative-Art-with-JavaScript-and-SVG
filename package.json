@@ -1,0 +1,22 @@
+{
+  "name": "generative-art-with-javascript-and-svg",
+  "version": "1.0.0",
+  "description": "The code to accompany the book Generative Art with JavaScript and SVG, by David Matthew.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Apress/Generative-Art-with-JavaScript-and-SVG.git"
+  },
+  "author": "David Matthew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Apress/Generative-Art-with-JavaScript-and-SVG/issues"
+  },
+  "homepage": "https://github.com/Apress/Generative-Art-with-JavaScript-and-SVG#readme",
+  "dependencies": {
+    "svjs": "^0.9.5"
+  }
+}

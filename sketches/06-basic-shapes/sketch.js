@@ -37,9 +37,3 @@ svg.create('rect').set({
 svg.create('rect').set({
   x: 500, y: 200, width: 175, height: 600, fill: '#49283c'
 });
-
-document.addEventListener('keydown', (event) => {
-  if (event.code === 'KeyS') {
-    console.log(svg.element.outerHTML);
-  }
-})

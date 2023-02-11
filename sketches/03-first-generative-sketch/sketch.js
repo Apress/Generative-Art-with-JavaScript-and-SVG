@@ -48,7 +48,7 @@ for (let i = 0; i < randomised.iterations; i += 1) {
     rx: radiusX,
     ry: radiusY,
     fill: 'none',
-    stroke: `hsla(${hue}, 80%, 80%, 0.6)`,
+    stroke: `hsl(${hue} 80% 80% / 0.6)`,
     transform: `rotate(${rotation} ${center} ${center})`
   });
 }

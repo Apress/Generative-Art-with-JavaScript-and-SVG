@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-  <rect x="0" y="0" width="500" height="500" fill="#ad3622"/>
-  <circle r="125" cy="250" cx="250" fill="#d0d1c9"/>
-  <circle r="100" cy="250" cx="250" fill="#1c1c1c"></circle>
-  <circle r="75" cy="250" cx="250" fill="#5085b4"></circle>
-  <circle r="50" cy="250" cx="250" fill="#d6a946"></circle>
-</svg>

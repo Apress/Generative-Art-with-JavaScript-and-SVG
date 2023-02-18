@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1000" height="500" style="fill: rgb(24, 24, 24);"/>
-  <g transform="matrix(1, 0, 0, 1, 9.071014, -13.60701)">
-    <line style="stroke-width: 19px; fill: none; stroke: rgb(88, 0, 255); stroke-dasharray: 50, 100, 200, 100;" x1="140.929" y1="382.458" x2="840.929" y2="382.458"/>
-    <line style="stroke-width: 19px; fill: none; stroke: rgb(0, 150, 255); stroke-dasharray: 10, 30, 60;" x1="140.929" y1="303.224" x2="840.929" y2="303.224"/>
-    <line style="stroke-width: 19px; fill: none; stroke: rgb(0, 215, 255); stroke-dasharray: 40, 20;" x1="140.929" y1="223.99" x2="840.929" y2="223.99"/>
-    <line style="stroke-width: 19px; fill: none; stroke: rgb(114, 255, 255); stroke-dasharray: 20;" x1="140.929" y1="144.756" x2="840.929" y2="144.756"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500"><path d="M0 0h1000v500H0z" style="fill:#181818"/><path d="M140.929 382.458h700" style="stroke-width:19px;fill:none;stroke:#5800ff;stroke-dasharray:50,100,200,100" transform="translate(9.071 -13.607)"/><path d="M140.929 303.224h700" style="stroke-width:19px;fill:none;stroke:#0096ff;stroke-dasharray:10,30,60" transform="translate(9.071 -13.607)"/><path d="M140.929 223.99h700" style="stroke-width:19px;fill:none;stroke:#00d7ff;stroke-dasharray:40,20" transform="translate(9.071 -13.607)"/><path d="M140.929 144.756h700" style="stroke-width:19px;fill:none;stroke:#72ffff;stroke-dasharray:20" transform="translate(9.071 -13.607)"/></svg>

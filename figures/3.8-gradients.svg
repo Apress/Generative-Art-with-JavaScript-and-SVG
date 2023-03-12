@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="gradient-0">
+      <stop offset="0" style="stop-color: rgb(239, 28, 0);"/>
+      <stop offset="0.301" style="stop-color: rgb(240, 202, 63);"/>
+      <stop offset="0.587" style="stop-color: rgb(221, 178, 210);"/>
+      <stop offset="1" style="stop-color: rgb(18, 172, 186);"/>
+    </linearGradient>
+    <linearGradient id="gradient-2">
+      <stop offset="0" style="stop-color: #22c1c3;"/>
+      <stop offset="0.485" style="stop-color: rgb(107, 167, 195);"/>
+      <stop offset="1" style="stop-color: #fdbb2d;"/>
+    </linearGradient>
+    <linearGradient id="gradient-3">
+      <stop offset="0" style="stop-color: #36d1dc;"/>
+      <stop offset="1" style="stop-color: #5b86e5;"/>
+    </linearGradient>
+    <linearGradient id="gradient-0-2" gradientUnits="userSpaceOnUse" x1="117.667" y1="0" x2="117.667" y2="35.333" gradientTransform="matrix(0, 6.895261, -6.895261, 0, 240.811676, -793.562032)" xlink:href="#gradient-0"/>
+    <radialGradient id="gradient-2-0" gradientUnits="userSpaceOnUse" cx="213.083" cy="91.223" r="70.754" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#gradient-2"/>
+    <radialGradient id="gradient-3-0" gradientUnits="userSpaceOnUse" cx="386.917" cy="308.777" r="70.754" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#gradient-3"/>
+    <radialGradient id="gradient-0-0" gradientUnits="userSpaceOnUse" cx="300" cy="200" r="70.754" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#gradient-0"/>
+  </defs>
+  <rect width="1000" height="1000" style="fill: rgb(24, 24, 24);"/>
+  <g transform="matrix(1.33438, 0, 0, 1.963805, 563.480957, 99.944466)" style=""/>
+  <g transform="matrix(1.33438, 0, 0, 1.33438, 185.420517, 20.77128)"/>
+  <ellipse style="stroke-width: 3px; fill: url(#gradient-2-0);" cx="213.083" cy="91.223" rx="70.754" ry="70.754" transform="matrix(0, -1, 1, 0, 673.290588, 713.083008)"/>
+  <ellipse style="stroke-width: 3px; fill: url(#gradient-3-0);" cx="386.917" cy="308.777" rx="70.754" ry="70.754" transform="matrix(0, -1, 1, 0, 455.736572, 632.172791)"/>
+  <ellipse style="stroke-width: 3px; fill: url(#gradient-0-0);" cx="300" cy="200" rx="70.754" ry="70.754" transform="matrix(0, -1, 1, 0, 564.513611, 1054.744263)"/>
+  <g transform="matrix(0, 2.766274, 2.766274, 0, 345.598541, 174.501724)" style="">
+    <rect x="0" y="0" width="235.33334350585938" height="35.333335876464844" style="fill: url(#gradient-2);" rx="4.891" ry="4.891"/>
+  </g>
+  <g transform="matrix(0, -2.766274, 2.766274, 0, 164.732391, 825.49823)" style="">
+    <rect x="0" y="0" width="235.33334350585938" height="35.333335876464844" style="fill: url(#gradient-3);" rx="4.89" ry="4.89"/>
+  </g>
+  <g transform="matrix(0, 2.766274, 2.766274, 0, 526.464722, 174.501724)" style="">
+    <rect x="0" y="0" width="235.33334350585938" height="35.333335876464844" style="fill: url(#gradient-0-2);" rx="4.89" ry="4.89"/>
+  </g>
+  <g transform="matrix(1.698359, 0, 0, 1.698359, 55.495529, -270.475433)"/>
+  <g transform="matrix(1.698359, 0, 0, 1.698359, 473.585297, -230.847031)"/>
+  <g transform="matrix(1.698359, 0, 0, 1.698359, 231.268265, -134.624359)"/>
+</svg>

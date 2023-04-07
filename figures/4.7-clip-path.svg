@@ -51,39 +51,40 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     id="layer1">
-    <rect
-       style="fill:#181818;stroke:none;stroke-width:1.17515"
-       id="rect239"
-       width="1000"
-       height="500"
-       x="0"
-       y="0" />
-    <circle
-       id="path340"
-       cx="389.2301"
-       cy="249.99998"
-       r="124.99999"
-       style="opacity:0.678674;fill:#80ffe6;stroke:none;stroke-width:0.999999;stroke-opacity:1" />
-    <rect
-       style="fill:none;stroke:#f9f9f9;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-       id="rect1054"
-       width="248"
-       height="248"
-       x="139.786"
-       y="126" />
-    <circle
-       id="circle1115"
-       cx="767.58649"
-       cy="250"
-       r="124.99999"
-       style="opacity:0.678674;fill:#80ffe6;stroke:none;stroke-width:0.999999;stroke-opacity:1"
-       clip-path="url(#clipPath1171)"
-       transform="translate(20.643624,0.44441986)" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:3;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart)"
-       d="m 545.64362,248.44442 h 83"
-       id="path1301" />
-  </g>
+  <rect
+     style="fill:#181818;stroke:none;stroke-width:1.17515"
+     id="rect239"
+     width="1000"
+     height="500"
+     x="0"
+     y="0" />
+  <circle
+     id="path340"
+     cx="389.2301"
+     cy="249.99998"
+     r="124.99999"
+     style="opacity:0.678674;fill:#80ffe6;stroke:none;stroke-width:0.999999;stroke-opacity:1" />
+  <rect
+     style="fill:none;stroke:#f9f9f9;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="rect1054"
+     width="248"
+     height="248"
+     x="139.786"
+     y="126" />
+  <circle
+     id="circle1115"
+     cx="767.58649"
+     cy="250"
+     r="124.99999"
+     style="opacity:0.678674;fill:#80ffe6;stroke:none;stroke-width:0.999999;stroke-opacity:1"
+     clip-path="url(#clipPath1171)"
+     transform="translate(20.643624,0.44441986)" />
+  <path
+     style="fill:none;stroke:#ffffff;stroke-width:3;stroke-dasharray:none;stroke-opacity:1;marker-end:"
+     d="m 545.64362,248.44442 h 83"
+     id="path1301" />
+  <path
+     id="rect924"
+     style="fill:#ffffff;stroke-width:1.23448;stroke-linejoin:round"
+     d="m 637.80756,248.44483 -11.89088,-9.16394 v 18.32706 z" />
 </svg>

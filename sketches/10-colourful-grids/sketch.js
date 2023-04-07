@@ -36,8 +36,10 @@ let cellSize = Math.abs(increment - spacing);
 for (let y = 0; y < gridSize; y += increment) {
 	for (let x = 0; x < gridSize; x += increment) {
 		
-		// Create our clip path.
+		// Create our clip path with a unique id.
 		let clip = svg.create('clipPath').set({ id: `${x}${y}` });
+
+		// Create the clip path shape.
 		clip.create('rect').set({
 			x: x, y: y, width: cellSize, height: cellSize
 		});

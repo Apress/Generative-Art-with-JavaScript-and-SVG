@@ -12,24 +12,26 @@ svg.create('rect').set({
 	x: 0, y: 0, width: 1000, height: 1000, fill: '#181818'
 });
 
-let total = 5000;
-let above = 0;
-let below = 0;
+for (let i = 0; i < 10000; i += 1) {
 
-for (let i = 0; i < total; i += 1) {
-	// let x = Gen.gaussian();
-	// if (x > 3) above += 1;
-	// if (x < -3) below += 1
-	// svg.create('line').set({
-	// 	x1: 500, y1: (i * 2), x2: 500 + (x * 100), y2: (i * 2), stroke: 'white'
-	// });
-	// let cx = Gen.mapRange(Gen.gaussian(), -3, 3, 0, 1000);
-	// let cy = Gen.mapRange(Gen.gaussian(), -3, 3, 0, 1000);
-	let cx = Gen.gaussian(500, 100);
-	let cy = Gen.gaussian(500, 100);
-	svg.create('circle').set({
-		cx: cx, cy: cy, r: 5, fill: '#ffffff30'
+	// Generate x and y co-ordinates with a gaussian distribution.
+	let gaussianX = Gen.gaussian(500, 150, false);
+	let gaussianY = Gen.gaussian(500, 150, false);
+
+	// Create the lines based on the gaussian co-ordinates.
+	svg.create('line').set({
+		x1: gaussianX,
+		y1: gaussianY,
+		x2: gaussianX + Gen.random(-10, 10, false),
+		y2: gaussianY + Gen.random(-10, 10, false),
+		stroke: `hsl(${Gen.random(150, 270, false)} 80% 80% / 0.8)`
 	});
 }
 
-// console.log(`${below} below, ${above} above. ${((below + above) / total) * 100}% overall.`)
+// Create a series of circles to frame the distribution.
+for (let i = 0; i < 10; i += 1) {
+	svg.create('circle').set({
+		cx: 500, cy: 500, r: 25 + (i * 25), fill: 'none',
+		stroke: `hsl(0 0% 0% / ${0.25 - (i / 50)})`, stroke_width: 15
+	});
+}

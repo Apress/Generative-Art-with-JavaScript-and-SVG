@@ -16,11 +16,7 @@ svg.create('rect').set({
 let portoPareto = svg.create('g');
 
 // Create the sky gradient.
-let skyGrad = svg.createGradient('sky', 'linear', 90);
-skyGrad.create('stop').set({ offset: '0', stop_color: '#f58b10' });
-skyGrad.create('stop').set({ offset: '0.5', stop_color: '#d21263' });
-skyGrad.create('stop').set({ offset: '0.75', stop_color: '#940c5e' });
-skyGrad.create('stop').set({ offset: '1', stop_color: '#25226c' });
+svg.createGradient('sky', 'linear', ['#f58b10', '#d21263', '#940c5e', '#25226c'], 90);
 
 // Create the sky and apply the gradient.
 portoPareto.create('rect').set({
@@ -28,9 +24,7 @@ portoPareto.create('rect').set({
 });
 
 // Create the river gradient.
-let riverGrad = svg.createGradient('river', 'linear', 90);
-riverGrad.create('stop').set({ offset: '0.1', stop_color: '#80e5ff23' });
-riverGrad.create('stop').set({ offset: '1', stop_color: '#70b566' });
+svg.createGradient('river', 'linear', ['#80e5ff10', '#70b566'], 90);
 
 // Create the river and apply the gradient.
 portoPareto.create('rect').set({
@@ -55,9 +49,7 @@ for (let i = 0; i < 60; i += 1) {
 }
 
 // Create a radial gradient.
-let radialGrad = svg.createGradient('radialGrad', 'radial');
-radialGrad.create('stop').set({ offset: '0.5', stop_color: '#fff' });
-radialGrad.create('stop').set({ offset: '1', stop_color: '#fff', stop_opacity: 0.2 });
+svg.createGradient('radialGrad', 'radial', ['#ffffff', '#ffffff60']);
 
 // Create a mask, and inside it create the circle with the radial gradient.
 let mask = svg.create('mask').set({ id: 'mask' });
@@ -69,9 +61,7 @@ mask.create('circle').set({
 portoPareto.set({ mask: 'url(#mask)' });
 
 // Create a linear gradient for our circular frame.
-let strokeGrad = svg.createGradient('strokeGrad');
-strokeGrad.create('stop').set({ offset: '0', stop_color: '#eee' });
-strokeGrad.create('stop').set({ offset: '1', stop_color: '#eee', stop_opacity: 0.1 });
+svg.createGradient('strokeGrad', 'linear', ['#eeeeee', '#eeeeee15']);
 
 // Create the frame and apply the gradient.
 svg.create('circle').set({

@@ -36,4 +36,4 @@ for (let y = 0; y < gridSize; y += increment) {
 }
 
 // Centre the grid within the viewBox.
-grid.moveTo([500, 500]);
+grid.moveTo(500, 500);

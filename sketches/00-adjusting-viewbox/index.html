@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #container svg {
+            border: 1px solid #ddd;
+        }
+    </style>
+    <title>Adjusting the viewBox</title>
+</head>
+
+<body>
+
+    <div id="container"></div>
+
+    <div style="display: flex">
+        <input type="range" id="min-x" name="min-x" min="-500" max="500" step="50" value="0">
+        <label for="min-x">viewBox min-x: <span id="min-x-val">0</span></label>
+    </div>
+    <div style="display: flex">
+        <input type="range" id="min-y" name="min-y" min="-500" max="500" step="50" value="0">
+        <label for="min-y">viewBox min-y: <span id="min-y-val">0</span></label>
+    </div>
+    <div style="display: flex">
+        <input type="range" id="vbwh" name="vbwh" min="500" max="1500" step="100" value="1000">
+        <label for="vbwh">viewBox width/height: <span id="vbwh-val">1000</span></label>
+    </div>
+
+    <script src="./sketch.js" type="module"></script>
+
+</body>
+
+</html>

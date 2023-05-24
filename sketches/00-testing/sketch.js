@@ -1,7 +1,7 @@
 import { SvJs, Gen, Noise } from '../../../svjs/src/index.js';
 
 // Viewport size (1:1 aspect ratio).
-const svgSize = window.innerWidth > window.innerHeight ? window.innerHeight : window.innerWidth;
+const svgSize = Math.min(window.innerWidth, window.innerHeight);
 
 // Parent SVG.
 const svg = new SvJs().addTo(document.getElementById('container'));
@@ -9,45 +9,68 @@ svg.set({ width: svgSize, height: svgSize, viewBox: '0 0 1000 1000' });
 
 // Background.
 svg.create('rect').set({
-	x: 0, y: 0, width: 1000, height: 1000, fill: '#181818'
+  x: 0, y: 0, width: 1000, height: 1000, fill: '#181818'
 });
 
-let grad = svg.createGradient('grad', 'linear', ['red', 'orange', 'yellow'], 90);
+for (let i = 0; i < 60; i += 1) {
+  let star1 = svg.create('path');
+  star1.set({
+    fill: 'none',
+    stroke: `hsl(${60 + (i * 2)} 80% 80% / 0.5)`,
+    stroke_width: 0.5,
+    d: star(500, 500, 10 + (i * 5), 25 + (i * 5), 12)
+  });
 
-let rect = svg.create('rect').set({
-	x: 0, y: 0, width: 400, height: 400, fill: 'url(#grad)'
-});
+  star1.rotate(i * 1.5);
 
-console.log(rect.getCentre())
+  let star2 = svg.create('path');
+  star2.set({
+    fill: 'none',
+    stroke: `hsl(${360 - (i * 2)} 80% 80% / 0.5)`,
+    stroke_width: 0.5,
+    d: star(500, 500, 10 + (i * 5), 25 + (i * 5), 12)
+  });
 
-rect.moveTo(500, 500);
+  star2.rotate(i * - 1.5);
+}
 
-//console.log(rect.element.transform.baseVal.consolidate().matrix);
 
-// let noise = new Noise();
+function star(cx, cy, r1, r2, nPoints) {
+  let pathData = '';
+  let angle = (Math.PI * 2) / nPoints;
+  
+  for (let i = 0; i < Math.PI * 2; i += angle) {
+    let sx = cx + Math.cos(i) * r2;
+    let sy = cy + Math.sin(i) * r2;
+    pathData = (i === 0) ? `M ${sx} ${sy} ` : `${pathData} L ${sx} ${sy} `;
+    
+    sx = cx + Math.cos(i + angle / 2) * r1;
+    sy = cy + Math.sin(i + angle / 2) * r1;
+    pathData += `L ${sx} ${sy} `;
+  }
 
-// let xoff = 0;
-// let yoff = 0;
+  pathData += ' Z';
 
-// let line = svg.create('line');
-// let circle = svg.create('circle');
+  return pathData;
 
-// function draw() {
+}
 
-// 	let n = Math.round(noise.get(xoff, yoff) * 1000);
+function bezierStar(cx, cy, r1, r2, nPoints) {
+  let pathData = '';
+  let angle = (Math.PI * 2) / nPoints;
+  
+  for (let i = 0; i < Math.PI * 2; i += angle) {
+    let sx = cx + Math.cos(i) * r2;
+    let sy = cy + Math.sin(i) * r2;
+    pathData = (i === 0) ? `M ${sx} ${sy} ` : `${pathData} L ${sx} ${sy} `;
+    
+    sx = cx + Math.cos(i + angle / 2) * r1;
+    sy = cy + Math.sin(i + angle / 2) * r1;
+    pathData += `L ${sx} ${sy} `;
+  }
 
-// 	line.set({
-// 		x1: n, y1: 0, x2: n, y2: 1000, stroke: '#fff'
-// 	});
+  pathData += ' Z';
 
-// 	circle.set({
-// 		cx: 500, cy: 500, r: n / 5, fill: '#ffffffaa'
-// 	});
+  return pathData;
 
-// 	xoff += 0.01;
-// 	yoff += 0.01;
-
-// 	requestAnimationFrame(draw);
-// }
-
-// draw();
+}

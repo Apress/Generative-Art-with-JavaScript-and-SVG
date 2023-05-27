@@ -1,7 +1,7 @@
 import { SvJs, Gen } from '../../../svjs/src/index.js';
 
 // Viewport size (1:1 aspect ratio).
-const svgSize = window.innerWidth > window.innerHeight ? window.innerHeight : window.innerWidth;
+const svgSize = Math.min(window.innerWidth, window.innerHeight);
 
 // Parent SVG.
 const svg = new SvJs().addTo(document.getElementById('container'));

@@ -1,0 +1,7 @@
+<svg width="300px" height="300px" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs></defs>
+  <rect x="0" y="0" width="300" height="300" fill="#181818"></rect>
+  <path fill="none" stroke-width="3" stroke-dasharray="3" d="M 50 47.5 L 150 247.5 L 250 47.5" style="stroke: rgb(255, 112, 229);"></path>
+  <circle stroke-width="3" r="5" cx="150" cy="247.5" style="fill: rgb(71, 255, 249);"></circle>
+  <path fill="none" stroke-width="3" d="M 50 47.5 C 116.666 180.833 183.333 180.833 250 47.5" style="stroke: rgb(71, 255, 249);"></path>
+</svg>

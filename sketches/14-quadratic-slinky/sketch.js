@@ -27,24 +27,21 @@ let hue = Gen.random(0, 360, false);
 // Set up the slinky path group.
 let slinky = svg.create('g').set({ id: 'slinky' });
 
-// Create the quadratic curves.
+// Start the loop.
 for (let i = 0; i < 500; i += 5) {
+
+  // Create the control points.
   let cpx = Gen.random(200, 400, false);
   let cpy = i - 400;
 
-  // The main path.
+  // Create the quadratic curve.
   slinky.create('path').set({
     stroke: `hsl(${hue} 90% 80% / 0.85)`,
     d: `M 0 ${i} q ${cpx} ${cpy} 600 0`
   });
 
-  // A faint offset path to suggest motion.
-  slinky.create('path').set({
-    stroke: `hsl(${hue} 90% 80% / 0.25)`,
-    d: `M 0 ${i - 2} q ${cpx} ${cpy - 2} 600 -2`
-  });
-
-  hue = (hue === 360) ? 0 : hue + 1.5;
+  // Increment the hue.
+  hue = (hue % 360) + 1.5;
 }
 
 slinky.moveTo(500, 500);

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            background-color: #202020;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #ui {
+            position: absolute;
+            top: 30px;
+            left: 33%;
+            transform: translateX(-33%);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title>Adjusting an Elliptical Arc Curve</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="ui">
+            <div style="display: flex">
+                <label for="rx">Radius X: </label>
+                <input type="range" id="rx" name="rx" min="0" max="500" step="1" value="250">
+                <span id="rx-val">250</span>
+            </div>
+            <div style="display: flex">
+                <label for="ry">Radius Y: </label>
+                <input type="range" id="ry" name="ry" min="0" max="500" step="1" value="250">
+                <span id="ry-val">250</span>
+            </div>
+            <div style="display: flex">
+                <label for="large-arc">Large Arc Flag: </label>
+                <input type="checkbox" id="large-arc" name="large-arc">
+            </div>
+            <div style="display: flex">
+                <label for="sweep">Sweep Flag: </label>
+                <input type="checkbox" id="sweep" name="sweep">
+            </div>
+        </div>
+
+    </div>
+
+    
+    
+
+    <script src="./sketch.js" type="module"></script>
+
+</body>
+
+</html>

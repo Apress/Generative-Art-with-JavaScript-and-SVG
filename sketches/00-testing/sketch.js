@@ -12,25 +12,7 @@ svg.create('rect').set({
   x: 0, y: 0, width: 1000, height: 1000, fill: '#181818'
 });
 
-let circleGroup = svg.create('g');
-let circles = [];
-let diameter = 500;
-// let numCircles = 2;
 let radius = 15;
-//let inc = circumference / numCircles;
-let swingPath = (diameter / 2) - (radius / 2);
-//let angle = 0;
-
-//for (let i = 0; i < numCircles; i += 1) {
-  // let angle = Math.PI * 2 / numCircles * i;
-  // let x = Gen.mapRange(Math.sin(angle), -1, 1, 400, 600, false);
-  // let y = Gen.mapRange(Math.cos(angle), -1, 1, 500, 700, false);
-  // let circle = circleGroup.create('circle').set({
-  //   cx: x, cy: y, r: radius, fill: '#ccc'
-  // });
-  // circles.push(circle);
-//}
-
 let numCircles = 10;
 
 for (let i = 0; i < numCircles; i += 1) {

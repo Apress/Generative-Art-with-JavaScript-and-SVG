@@ -22,9 +22,9 @@ for (let i = 0; i < 10000; i += 1) {
 	svg.create('line').set({
 		x1: gaussianX,
 		y1: gaussianY,
-		x2: gaussianX + Gen.random(-10, 10, false),
-		y2: gaussianY + Gen.random(-10, 10, false),
-		stroke: `hsl(${Gen.random(150, 270, false)} 80% 80% / 0.8)`
+		x2: gaussianX + Gen.random(-10, 10),
+		y2: gaussianY + Gen.random(-10, 10),
+		stroke: `hsl(${Gen.random(150, 270)} 80% 80% / 0.8)`
 	});
 }
 

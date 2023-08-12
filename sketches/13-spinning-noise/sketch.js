@@ -17,8 +17,8 @@ let noise = new Noise();
 let nX = 0;
 let noiseSpeed = 0.025;
 let lines = svg.create('g');
-let hue = Gen.random(0, 360, false);
-let iterations = Gen.random(60, 100, false);
+let hue = Gen.random(0, 360);
+let iterations = Gen.random(60, 100);
 
 // Start the dance.
 for (let i = 10; i < iterations; i += 1) {
@@ -45,4 +45,4 @@ for (let i = 10; i < iterations; i += 1) {
 }
 
 lines.moveTo(500, 500);
-lines.rotate(Gen.random(0, 360, false));
+lines.rotate(Gen.random(0, 360));

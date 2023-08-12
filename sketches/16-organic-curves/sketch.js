@@ -20,8 +20,8 @@ let amplifier = Gen.random(200, 500);
 
 // Curve and colour-related.
 let curves = svg.create('g');
-let numCurves = Gen.random(75, 125, false);
-let hue = Gen.random(0, 360, false);
+let numCurves = Gen.random(75, 125);
+let hue = Gen.random(0, 360);
 
 for (let i = 0; i < numCurves; i += 1) {
 
@@ -61,9 +61,9 @@ for (let i = 0; i < numCurves; i += 1) {
   // 10% chance of spawning a 'bubble'.
   if (Gen.chance(10)) {
     svg.create('circle').set({
-      r: Gen.random(5, 50, false),
-      cx: Gen.random(150, 850, false),
-      cy: Gen.random(150, 850, false),
+      r: Gen.random(5, 50),
+      cx: Gen.random(150, 850),
+      cy: Gen.random(150, 850),
       fill: `hsl(0 0% 100% / 0.1)`,
       stroke: '#888'
     });

@@ -24,7 +24,7 @@ for (let i = 0; i < iterations; i += 1) {
 	// Pick a random element.
 	let element = Gen.random(elements);
 
-	// Set up variables that we can use an any element.
+	// Set up variables that we can use on any element.
 	let x = Gen.random(200, 800);
 	let y = Gen.random(200, 800);
 	let fill = `hsl(${Gen.random(120, 240)} 80% 80% / ${Gen.random(5, 40)}%)`;

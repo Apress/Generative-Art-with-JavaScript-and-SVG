@@ -84,24 +84,37 @@ let options = {
   iterations: Infinity 
 };
 
-let scaleValues = [];
-for (let i = 0.0; i <= 0.5; i += 0.01) scaleValues.push(i.toFixed(2));
-console.log(scaleValues.reverse());
-console.log(scaleValues.reverse());
-
 shapes[2].animate(keyframes, options);
 
-// Animate the last shape using requestAnimationFrame.
-function animate(timeStamp) {
+// Variables to set outside the animation loop.
+let isPositive = true;
+let scale = 0, tick = 0, prevTime = 0;
 
-  // Prevent errors when timeStamp is undefined on first frame.
-  if (timeStamp === undefined) timeStamp = 0;
+// Animate the final shape using requestAnimationFrame.
+function animate(time) {
+
+  // Prevent errors when the time is undefined on first frame.
+  if (time === undefined) time = 0;
 
   // Rotate 360° in 5000ms: 360/5000 = 0.072.
-  let angle = timeStamp * 0.072;
+  let angle = time * 0.072;
 
-  // Apply the rotation.
-  shapes[3].set({ transform: `rotate(${angle})` });
+  // We need a constant tick value tied to the time that doesn't increment indefinitely.
+  tick = time - prevTime;
+
+  // Scale by 0.5 in 2500ms: 0.5/2500 = 0.0002.
+  scale = isPositive ? scale + (tick * 0.0002) : scale - (tick * 0.0002);
+
+  // Apply the rotation and scale values.
+  shapes[3].set({
+    transform: `rotate(${angle}) scale(${1 - scale}, ${1 + scale})`
+  });
+
+  // Flip the polarity if the scale value falls outside these bounds.
+  if (scale < 0 || scale > 0.5) isPositive = !isPositive;
+
+  // Capture the time before it increments.
+  prevTime = time;
 
   // The recursive bit.
   requestAnimationFrame(animate);

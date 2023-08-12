@@ -22,7 +22,7 @@ svg.create('rect').set({
 });
 
 // Choose a random starting hue.
-let hue = Gen.random(0, 360, false);
+let hue = Gen.random(0, 360);
 
 // Set up the slinky path group.
 let slinky = svg.create('g').set({ id: 'slinky' });

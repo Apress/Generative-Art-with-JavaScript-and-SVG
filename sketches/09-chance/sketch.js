@@ -16,7 +16,7 @@ svg.create('rect').set({
 let grid = svg.create('g');
 
 // Pick a random hue.
-let hue = Gen.random(0, 360, false); 
+let hue = Gen.random(0, 360); 
 
 // Set some grid-related variables.
 let gridSize = 660;

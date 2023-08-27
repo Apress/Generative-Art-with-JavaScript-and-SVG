@@ -39,7 +39,7 @@ for (let x = 0; x < gridSize; x += increment) {
     let noiseValue = noise.get(nX, nY);
 
     // Map the noise value to a useful range.
-    noiseValue = Gen.mapRange(noiseValue, -1, 1, 0, 100, false);
+    noiseValue = Gen.map(noiseValue, -1, 1, 0, 100, false);
 
 		// Create text displaying either 0 or 1 (50% chance).
 		let text = noiseGrid.create('text');

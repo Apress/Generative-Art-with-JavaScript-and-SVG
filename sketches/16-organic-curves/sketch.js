@@ -27,7 +27,7 @@ for (let i = 0; i < numCurves; i += 1) {
 
   // Retrieve and re-map our noise value.
   let noiseValue = noise.get(n);
-	noiseValue = Gen.mapRange(noiseValue, -1, 1, -amplifier, amplifier, false);
+	noiseValue = Gen.map(noiseValue, -1, 1, -amplifier, amplifier, false);
 
   // M command co-ordinates.
   let mx = 0;

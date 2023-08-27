@@ -23,8 +23,8 @@ let iterations = Gen.random(60, 100);
 // Start the dance.
 for (let i = 10; i < iterations; i += 1) {
   let noiseValue = noise.get(nX);
-	let hueShift = Gen.mapRange(noiseValue, -1, 1, -180, 180, false);
-  let lineLength = Gen.mapRange(noiseValue, -1, 1, 0, 1000, false);
+	let hueShift = Gen.map(noiseValue, -1, 1, -180, 180, false);
+  let lineLength = Gen.map(noiseValue, -1, 1, 0, 1000, false);
 
 	let l1 = lines.create('line').set({
     x1: 0, y1: 0, x2: 0, y2: lineLength,

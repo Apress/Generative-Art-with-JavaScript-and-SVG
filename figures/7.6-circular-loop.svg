@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="652" height="652" version="1.1" viewBox="0 0 1e3 1e3" xmlns="http://www.w3.org/2000/svg">
+<rect width="1e3" height="1e3" fill="#181818"/>
+<g transform="translate(9.5445 -51.315)" fill="none" stroke-opacity=".75">
+<circle cx="500" cy="552.21" r="10.477" stroke="#b6f5a3" transform-origin="500 500"/>
+<circle cx="509.25" cy="551.32" r="18.977" stroke="#bdf5a3" transform-origin="500 500"/>
+<circle cx="518.35" cy="548.93" r="27.478" stroke="#b6f5a3" transform-origin="500 500"/>
+<circle cx="526.85" cy="544.75" r="35.98" stroke="#aff5a3" transform-origin="500 500"/>
+<circle cx="534.31" cy="539.38" r="44.484" stroke="#a8f5a3" transform-origin="500 500"/>
+<circle cx="540.87" cy="532.52" r="52.988" stroke="#a3f5a6" transform-origin="500 500"/>
+<circle cx="545.95" cy="524.76" r="61.492" stroke="#a3f5ad" transform-origin="500 500"/>
+<circle cx="549.67" cy="516.11" r="69.997" stroke="#a3f5b4" transform-origin="500 500"/>
+<circle cx="551.76" cy="507.01" r="78.502" stroke="#a3f5bb" transform-origin="500 500"/>
+<circle cx="552.21" cy="497.61" r="87.008" stroke="#a3f5c2" transform-origin="500 500"/>
+<circle cx="550.87" cy="488.36" r="95.514" stroke="#a3f5c9" transform-origin="500 500"/>
+<circle cx="548.03" cy="479.41" r="104.02" stroke="#a3f5cf" transform-origin="500 500"/>
+<circle cx="543.56" cy="471.21" r="112.53" stroke="#a3f5d6" transform-origin="500 500"/>
+<circle cx="537.74" cy="463.9" r="121.03" stroke="#a3f5dd" transform-origin="500 500"/>
+<circle cx="530.73" cy="457.78" r="129.54" stroke="#a3f5e4" transform-origin="500 500"/>
+<circle cx="522.67" cy="453.01" r="138.05" stroke="#a3f5eb" transform-origin="500 500"/>
+<circle cx="513.87" cy="449.73" r="146.55" stroke="#a3f5f2" transform-origin="500 500"/>
+<circle cx="504.62" cy="447.94" r="155.06" stroke="#a3f0f5" transform-origin="500 500"/>
+<circle cx="495.38" cy="447.94" r="163.57" stroke="#a3e9f5" transform-origin="500 500"/>
+<circle cx="486.13" cy="449.73" r="172.07" stroke="#a3e2f5" transform-origin="500 500"/>
+<circle cx="477.33" cy="453.01" r="180.58" stroke="#a3dbf5" transform-origin="500 500"/>
+<circle cx="469.27" cy="457.78" r="189.09" stroke="#a3d4f5" transform-origin="500 500"/>
+<circle cx="462.26" cy="463.9" r="197.6" stroke="#a3cdf5" transform-origin="500 500"/>
+<circle cx="456.44" cy="471.21" r="206.1" stroke="#a3c6f5" transform-origin="500 500"/>
+<circle cx="451.97" cy="479.41" r="214.61" stroke="#a3bff5" transform-origin="500 500"/>
+<circle cx="449.13" cy="488.36" r="223.12" stroke="#a3b8f5" transform-origin="500 500"/>
+<circle cx="447.79" cy="497.61" r="231.63" stroke="#a3b1f5" transform-origin="500 500"/>
+<circle cx="448.24" cy="507.01" r="240.13" stroke="#a3aaf5" transform-origin="500 500"/>
+<circle cx="450.33" cy="516.11" r="248.64" stroke="#a3a3f5" transform-origin="500 500"/>
+<circle cx="454.05" cy="524.76" r="257.15" stroke="#aaa3f5" transform-origin="500 500"/>
+<circle cx="459.13" cy="532.52" r="265.66" stroke="#b1a3f5" transform-origin="500 500"/>
+<circle cx="465.69" cy="539.38" r="274.17" stroke="#b8a3f5" transform-origin="500 500"/>
+<circle cx="473.15" cy="544.75" r="282.67" stroke="#bfa3f5" transform-origin="500 500"/>
+<circle cx="481.65" cy="548.93" r="291.18" stroke="#c6a3f5" transform-origin="500 500"/>
+<circle cx="490.75" cy="551.32" r="299.69" stroke="#cda3f5" transform-origin="500 500"/>
+</g>
+</svg>

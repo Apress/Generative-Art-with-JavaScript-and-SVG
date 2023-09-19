@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: monospace
+        }
+
+        fieldset {
+            border: none;
+            display: flex;
+            align-items: center;
+            padding: 2px 0;
+            font-size: 12px
+        }
+    </style>
+    <title>Tweaking Turbulence</title>
+</head>
+
+<body>
+
+    <div id="container"></div>
+
+    <form>
+
+        <fieldset>
+            <input type="radio" name="type" id="turbulence" value="turbulence" checked>
+            <label for="turbulence">turbulence</label>
+            <input type="radio" name="type" id="fractalNoise" value="fractalNoise">
+            <label for="fractalNoise">fractalNoise</label>
+        </fieldset>
+
+        <fieldset>
+            <input type="range" id="freq" name="freq" min="0.001" max="0.25" step="0.001" value="0.01">
+            <label for="freq">baseFrequency: <span id="freq-val">0.01</span></label>
+        </fieldset>
+
+        <fieldset>
+            <input type="range" id="octaves" name="octaves" min="1" max="8" step="1" value="1">
+            <label for="octaves">numOctaves: <span id="octaves-val">1</span></label>
+        </fieldset>
+
+        <fieldset>
+            <input type="range" id="seed" name="seed" min="1" max="500" step="1" value="1">
+            <label for="seed">seed: <span id="seed-val">1</span></label>
+        </fieldset>
+
+        <fieldset>
+            <input type="radio" name="stitchTiles" id="noStitch" value="noStitch">
+            <label for="noStitch">noStitch</label>
+            <input type="radio" name="stitchTiles" id="stitch" value="stitch" checked>
+            <label for="stitch">stitch</label>
+        </fieldset>
+
+    </form>
+
+    <script src="./sketch.js" type="module"></script>
+
+</body>
+
+</html>

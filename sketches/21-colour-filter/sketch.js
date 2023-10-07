@@ -34,7 +34,6 @@ for (let y = 0; y < gridSize; y += increment) {
         )`
       });
     }
-		
 	}
 }
 
@@ -57,13 +56,13 @@ filter.create('feColorMatrix').set({
 // Set a flood colour.
 filter.create('feFlood').set({
   flood_color: '#7F462C',
-  result: 'brown'
+  result: 'flood'
 });
 
 // Randomise the blend mode.
 filter.create('feBlend').set({
   mode: Gen.random(blendModes),
-  in: 'brown',
+  in: 'flood',
   in2: 'desaturate',
   result: 'blend'
 });

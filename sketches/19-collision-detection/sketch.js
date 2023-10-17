@@ -53,7 +53,7 @@ for (let i = 0; i < numCircles; i += 1) {
 }
 
 // Get the frame start point (x or y) and the inset.
-let frameStart = Number(frame.get('x'));
+let frameEdge = Number(frame.get('x'));
 let frameInset = Number(frame.get('stroke-width')) / 2;
 
 // The animation loop.

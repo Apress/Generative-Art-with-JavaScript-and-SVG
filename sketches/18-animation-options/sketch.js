@@ -26,12 +26,13 @@ for (let i = 0; i < 4; i += 1) {
     width: size,
     height: size,
     fill: palette[i],
-    transform_origin: '50% 50%'
+    transform_origin: '50% 50%',
+    transform: 'rotate(45)'
   });
   shapes.push(shape);
 }
 
-// Set an id for our first shape.
+//Set an id for our first shape.
 shapes[0].set({ id: 'cssShape' });
 
 // Animate this shape with CSS.

@@ -12,23 +12,15 @@ svg.create('rect').set({
 	x: 0, y: 0, width: 1000, height: 1000, fill: '#181818'
 });
 
-// Create a group and apply the filter.
-let paper = svg.create('g').set({
+// Create a parchment-coloured gradient.
+svg.createGradient('parchment', 'linear', ['#fffbeb', '#fde68a'], 90);
+
+// Create the path for the ripped paper.
+let paper = svg.create('path').set({
+  fill: 'url(#parchment)',
+  stroke: '#4444',
+  d: 'M 0,0 h 175 l 175,550 h -350 Z M 210,0 h 340 v 550 h -165 Z',
   filter: 'url(#rough-paper)'
-});
-
-// Create the first piece of paper.
-paper.create('path').set({
-  fill: '#f43f5e',
-  stroke: '#4444',
-  d: 'M 0,0 h 175 l 175,550 h -350 Z'
-});
-
-// Create the second piece.
-paper.create('path').set({
-  fill: '#22d3ee',
-  stroke: '#4444',
-  d: 'M 210,0 h 340 v 550 h -165 Z'
 });
 
 // Centre it.
@@ -37,6 +29,7 @@ paper.moveTo(500, 500);
 // Initialise the filter.
 let filter = svg.createFilter('rough-paper');
 
+// Add turbulence to simulate the paper grain.
 filter.create('feTurbulence').set({
   type: 'fractalNoise',
   numOctaves: 5,
@@ -45,13 +38,7 @@ filter.create('feTurbulence').set({
   result: 'turbulence'
 });
 
-filter.create('feDisplacementMap').set({
-  in: 'SourceGraphic',
-  in2: 'turbulence',
-  scale: 25,
-  result: 'distortion'
-});
-
+// Shine diffuse lighting on the turbulence.
 filter.create('feDiffuseLighting').set({
   surfaceScale: 1,
   diffuseConstant: 1.3,
@@ -62,6 +49,15 @@ filter.create('feDiffuseLighting').set({
   elevation: 45,
 });
 
+// Distort the paper source graphic with turbulence.
+filter.create('feDisplacementMap').set({
+  in: 'SourceGraphic',
+  in2: 'turbulence',
+  scale: 25,
+  result: 'distortion'
+});
+
+// Merge the lighting with the rough-edged paper.
 filter.create('feComposite').set({
   in: 'lighting',
   in2: 'distortion',
@@ -69,6 +65,7 @@ filter.create('feComposite').set({
   result: 'composite'
 });
 
+// Re-introduce the parchment gradient.
 filter.create('feBlend').set({
   in: 'composite',
   in2: 'distortion',

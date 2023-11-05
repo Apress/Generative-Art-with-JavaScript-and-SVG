@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000"
+   height="531.10541"
+   viewBox="0 0 1000 531.10541"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter1"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feDiffuseLighting
+         id="feDiffuseLighting1"
+         surfaceScale="1"
+         result="result1">
+        <fePointLight
+           id="fePointLight1"
+           z="75"
+           x="150"
+           y="150" />
+      </feDiffuseLighting>
+      <feComposite
+         id="feComposite1"
+         in="SourceGraphic"
+         operator="arithmetic"
+         in2="result1"
+         k1="1"
+         k2="0"
+         k3="0"
+         k4="0" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter2"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feSpecularLighting
+         id="feSpecularLighting2"
+         specularExponent="5"
+         specularConstant="1"
+         surfaceScale="1">
+        <fePointLight
+           id="fePointLight2"
+           x="175"
+           y="175"
+           z="75" />
+      </feSpecularLighting>
+      <feComposite
+         id="feComposite2"
+         operator="arithmetic"
+         k1="1.3"
+         in="SourceGraphic"
+         k2="0.2"
+         k3="0.1"
+         k4="-0.1" />
+    </filter>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(0,-234.4473)">
+    <rect
+       style="fill:#181818;fill-opacity:1;stroke:none;stroke-width:0.735883"
+       id="rect1"
+       width="1000"
+       height="531.10541"
+       x="0"
+       y="234.4473" />
+  </g>
+  <g
+     id="layer2"
+     transform="translate(0,-234.4473)">
+    <g
+       id="g2"
+       transform="translate(7.7120828,246.64605)"
+       style="fill:#67e8f9">
+      <circle
+         style="fill:#67e8f9;stroke:none;stroke-width:10;stroke-dashoffset:5.32;filter:url(#filter1)"
+         id="path1"
+         cx="259.64014"
+         cy="259.64011"
+         r="259.64011"
+         transform="matrix(0.72331372,0,0,0.72331372,67.994838,65.552695)" />
+      <circle
+         style="fill:#67e8f9;stroke:none;stroke-width:10;stroke-dashoffset:5.32;filter:url(#filter2)"
+         id="circle1"
+         cx="259.64014"
+         cy="259.64011"
+         r="259.64011"
+         transform="matrix(0.72331372,0,0,0.72331372,540.97845,65.552695)" />
+    </g>
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>David Matthew</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

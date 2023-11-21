@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="652" height="652" viewBox="0 0 1000 1000" style="touch-action: none;"><defs><linearGradient id="grad" gradientTransform="rotate(45)"><stop stop-color="#fde047" offset="0"></stop><stop stop-color="#a855f7" offset="1"></stop></linearGradient><filter id="blur" x="-25%" y="-25%" width="150%" height="150%" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="15"></feGaussianBlur></filter></defs><style>
+  path {
+    stroke-width: 2 
+  }
+
+  text {
+    fill: #aaa;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+  }
+
+  .point {
+    fill: #99f6e4;
+    stroke: #99f6e425;
+    stroke-width: 25
+  }
+</style><rect x="0" y="0" width="1000" height="1000" fill="#181818"></rect><path fill="none" stroke="#333" stroke-width="1" d="M 500,150 v 600 M 200,450 h 600"></path><circle cx="500" cy="450" r="300" fill="none" stroke="url(#grad)" stroke-width="5"></circle><circle cx="500" cy="450" r="325" fill="none" stroke="url(#grad)" stroke-width="5" filter="url(#blur)"></circle><path stroke="#5991db" d="M 500,450 L 712.1320343559643,237.86796564403576"></path><path stroke="#fde047" d="M 712.1320343559643,237.86796564403576 L 712.1320343559643 450"></path><path stroke="#ec4899" d="M 500,450 L 712.1320343559643 450"></path><circle class="point" cx="500" cy="450" r="10"></circle><circle class="point" r="10" cx="712.1320343559643" cy="237.86796564403576"></circle><circle class="point" r="10" cx="712.1320343559643" cy="450"></circle><text x="350" y="880">Degrees: 45</text><text x="350" y="910">Radians: 0.79</text><text x="510" y="880">Sine(θ): 0.71</text><text x="510" y="910">Cosine(θ): -0.71</text></svg>

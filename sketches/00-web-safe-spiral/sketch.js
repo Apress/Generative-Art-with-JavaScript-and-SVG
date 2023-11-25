@@ -1,4 +1,4 @@
-import { SvJs } from '../../../svjs/src/index.js';
+import { SvJs } from '../../node_modules/svjs/src/index.js';
 
 const svgSize = window.innerWidth > window.innerHeight ? window.innerHeight : window.innerWidth;
 const bgColor = '#181818';

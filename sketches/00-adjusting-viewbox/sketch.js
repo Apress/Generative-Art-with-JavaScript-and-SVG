@@ -1,5 +1,4 @@
-// Import the SvJs library.
-import { SvJs } from '../../../svjs/src/index.js';
+import { SvJs } from '../../node_modules/svjs/src/index.js';
 
 const svg = new SvJs().addTo(document.getElementById('container'));
 const minX = document.getElementById('min-x');

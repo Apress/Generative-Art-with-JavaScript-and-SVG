@@ -1,5 +1,5 @@
 // Import the SvJs library.
-import { SvJs } from '../../../svjs/src/index.js';
+import { SvJs } from '../../node_modules/svjs/src/index.js';
 
 const svg = new SvJs().addTo(document.getElementById('container'));
 const types = document.getElementsByName('type');
@@ -7,7 +7,6 @@ const tiles = document.getElementsByName('stitchTiles');
 const freq = document.getElementById('freq');
 const octs = document.getElementById('octaves');
 const seed = document.getElementById('seed');
-
 
 svg.set({ width: '250px', height: '250px', viewBox: '0 0 1000 1000' });
 

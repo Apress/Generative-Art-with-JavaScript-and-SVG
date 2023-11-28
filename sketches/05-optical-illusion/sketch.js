@@ -1,5 +1,5 @@
-//import { SvJs } from '../../node_modules/svjs/src/index.js';
-import { SvJs } from '../../../svjs/src/index.js';
+// Import the SvJs library.
+import { SvJs } from '../../node_modules/svjs/src/index.js';
 
 // Viewport size (1:1 aspect ratio).
 const svgSize = window.innerWidth > window.innerHeight ? window.innerHeight : window.innerWidth;

@@ -1,10 +1,11 @@
-import { SvJs } from '../../../svjs/src/index.js';
-
-// Viewport size (1:1 aspect ratio).
-const svgSize = window.innerWidth > window.innerHeight ? window.innerHeight : window.innerWidth;
+// Import the SvJs library.
+import { SvJs } from '../../node_modules/svjs/src/index.js';
 
 // Parent SVG.
 const svg = new SvJs().addTo(document.getElementById('container'));
+
+// Viewport and viewBox (1:1 aspect ratio).
+const svgSize = Math.min(window.innerWidth, window.innerHeight);
 svg.set({ width: svgSize, height: svgSize, viewBox: '0 0 1000 1000' });
 
 // Background.
@@ -13,7 +14,7 @@ svg.create('rect').set({
 });
 
 // The line to use for the gag.
-const line = '"Bart Bucks" are not legal tender.';
+let line = '"Bart Bucks" are not legal tender.';
 line = line.toUpperCase();
 
 // Run a loop, creating 12 (960 / 80) lines of text.

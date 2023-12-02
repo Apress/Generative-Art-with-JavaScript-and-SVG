@@ -1,4 +1,3 @@
-// Import the SvJs library.
 import { SvJs, Gen } from '../../node_modules/svjs/src/index.js';
 
 // Parent SVG.

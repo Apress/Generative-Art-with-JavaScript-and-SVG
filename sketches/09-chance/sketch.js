@@ -1,10 +1,10 @@
-import { SvJs, Gen } from '../../../svjs/src/index.js';
-
-// Viewport size (1:1 aspect ratio).
-const svgSize = Math.min(window.innerWidth, window.innerHeight);
+import { SvJs, Gen } from '../../node_modules/svjs/src/index.js';
 
 // Parent SVG.
 const svg = new SvJs().addTo(document.getElementById('container'));
+
+// Viewport and viewBox (1:1 aspect ratio).
+const svgSize = Math.min(window.innerWidth, window.innerHeight);
 svg.set({ width: svgSize, height: svgSize, viewBox: '0 0 1000 1000' });
 
 // Background.
@@ -29,7 +29,7 @@ let cellSize = Math.abs(increment - spacing);
 for (let y = 0; y < gridSize; y += increment) {
 	
 	// Increment the hue relative to the rows, keeping it within 0 and 360.
-	hue = (hue >= 360) ? (360 - hue) + (60 / rows) : hue + (60 / rows);
+	hue = (hue >= 360) ? (hue - 360) + (120 / rows) : hue + (120 / rows);
 
 	for (let x = 0; x < gridSize; x += increment) {
 

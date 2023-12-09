@@ -1,10 +1,10 @@
 import { SvJs, Gen, Noise } from '../../node_modules/svjs/src/index.js';
 
-// Viewport size (1:1 aspect ratio).
-const svgSize = Math.min(window.innerWidth, window.innerHeight);
-
 // Parent SVG.
 const svg = new SvJs().addTo(document.getElementById('container'));
+
+// Viewport and viewBox (1:1 aspect ratio).
+const svgSize = Math.min(window.innerWidth, window.innerHeight);
 svg.set({ width: svgSize, height: svgSize, viewBox: '0 0 1000 1000' });
 
 // Background.

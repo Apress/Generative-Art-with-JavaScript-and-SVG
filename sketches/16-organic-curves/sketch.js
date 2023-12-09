@@ -1,4 +1,4 @@
-import { SvJs, Gen, Noise } from '../../../svjs/src/index.js';
+import { SvJs, Gen, Noise } from '../../node_modules/svjs/src/index.js';
 
 // Viewport size (1:1 aspect ratio).
 const svgSize = Math.min(window.innerWidth, window.innerHeight);
